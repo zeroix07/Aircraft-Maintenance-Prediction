@@ -10,13 +10,13 @@ Pemilihan proyek ini juga dipicu oleh kesadaran akan pentingnya pemeliharaan pes
 
 ## Business Understanding
 
-### Problem Statements
+### Problem Statements:
 
 1. **Bagaimana cara untuk memprediksi waktu pemeliharaan berikutnya untuk pesawat berdasarkan siklus operasional dan pengaturan mesin?**
 
 2. **Bagaimana cara untuk meningkatkan efisiensi perencanaan pemeliharaan pesawat dengan memanfaatkan data sensor yang tersedia?**
 
-### Goals
+### Goals:
 
 1. Mengembangkan model prediksi menggunakan regresi linear untuk memperkirakan waktu pemeliharaan berikutnya berdasarkan siklus operasional dan parameter mesin.
 
