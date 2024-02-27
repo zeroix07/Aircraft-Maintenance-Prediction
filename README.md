@@ -2,13 +2,13 @@
 
 ## Domain Proyek
 
-Dalam industri penerbangan, pemeliharaan pesawat adalah bagian penting dalam memastikan keamanan dan kinerja pesawat. Namun, pemeliharaan yang tidak terjadwal atau terlalu sering dapat menyebabkan gangguan operasional dan biaya yang tinggi. Di sisi lain, kurangnya pemeliharaan yang memadai dapat meningkatkan risiko kegagalan dan bahaya keselamatan.
+Dalam industri penerbangan, pemeliharaan pesawat adalah bagian penting dalam memastikan keamanan dan kinerja pesawat. Namun, pemeliharaan yang tidak terjadwal atau terlalu sering dapat menyebabkan gangguan operasional dan biaya yang tinggi. Di sisi lain, kurangnya pemeliharaan yang memadai dapat meningkatkan risiko kegagalan dan bahaya keselamatan. Jet  engine adalah  komponen  kunci dalam industri penerbangan yang memerlukan pemeliharaan yang tepat waktu untuk menjaga keandalan dan keamanan operasional. Kerusakan pada mesin jet adalah isu kritis dalam industri penerbangan.. Salah satu tantangan utama dalam pemeliharaan  mesin  jet  adalah  memprediksi  kapan  komponen  atau  sistem  akan  mengalami kerusakan  sehingga pemeliharaan  dapat  dilakukan  sebelum  terjadinya  kegagalan  yang  tidak  terduga.  Dalam  upaya  untuk  meningkatkan efisiensi pemeliharaan mesin jet, penelitian ini fokus pada penggunaan teknik machine learning untuk memprediksi Remaining Useful Life(RUL) jet engine. 
 
 Dalam upaya untuk meningkatkan efisiensi dan efektivitas pemeliharaan pesawat, banyak perusahaan penerbangan mulai mengadopsi pendekatan yang didorong oleh data. Dengan menggunakan teknik-teknik pemeliharaan berbasis prediksi, perusahaan dapat merencanakan pemeliharaan secara lebih cerdas, mengoptimalkan penggunaan sumber daya, dan mengurangi gangguan yang tidak terduga dalam operasi penerbangan.
 
-Salah satu pendekatan yang digunakan adalah menggunakan teknik machine learning, seperti regresi linear, untuk memprediksi kebutuhan pemeliharaan pesawat. Dengan menganalisis data historis tentang pemeliharaan, pengoperasian pesawat, dan faktor-faktor lain yang mempengaruhi kondisi pesawat, model regresi linear dapat digunakan untuk memperkirakan waktu pemeliharaan berikutnya, mendeteksi potensi kegagalan komponen, atau bahkan memprediksi sumber daya yang diperlukan untuk pemeliharaan di masa mendatang. Dengan demikian, penggunaan regresi linear dalam proyek pemeliharaan pesawat menjadi salah satu langkah yang menarik dalam upaya untuk meningkatkan efisiensi, keselamatan, dan kinerja operasional dalam industri penerbangan.
+Salah satu pendekatan yang digunakan adalah menggunakan teknik machine learning, seperti regresi linear, untuk memprediksi kebutuhan pemeliharaan pesawat. Dengan menganalisis data historis tentang pemeliharaan, pengoperasian pesawat, dan faktor-faktor lain yang mempengaruhi kondisi pesawat, model regresi linear dapat digunakan untuk memperkirakan waktu pemeliharaan berikutnya, mendeteksi potensi kegagalan komponen, atau bahkan memprediksi sumber daya yang diperlukan untuk pemeliharaan di masa mendatang. Dengan demikian, penggunaan regresi linear dalam proyek pemeliharaan pesawat menjadi salah satu langkah yang menarik dalam upaya untuk meningkatkan efisiensi, keselamatan, dan kinerja operasional dalam industri penerbangan. Hasil penelitian  ini  memberikan  wawasan  berharga  dalam  pemeliharaan  prediktif  mesin  jet  dan menunjukkan manfaat signifikan dari penerapan machine learning dalam meningkatkan efisiensi dan keandalan pesawat.  Strategi pemeliharaan  yang  buruk  dapat  mengakibatkan  produktivitas mesin yang lebih rendah. Kurangnya pemeliharaan pada mesin juga dapat menyebabkan kerugian finansial. Oleh karena itu, diperlukan sebuah strategi pemeliharaan yang baik untuk mencegah terjadinya downtimeyang tidak direncanakan. Predictive  maintenance adalah  metode  yang  menggunakan  alat  prediksi  untuk  menentukan  kapan  pemeliharaan  harus dilakukan.  Teknik  ini  didasari  pada  pemantauan  (monitoring)  berkelanjutan  pada  peralatan  sehingga memungkinkan dilakukannya pemeliharaan jika diperlukan
 
-Latar belakang yang membuat saya memilih project ini yaitu:
+Latar belakang pemilihan project ini:
 - Pemeliharaan pesawat yang efisien adalah kunci dalam industri penerbangan untuk menjaga keamanan dan mengurangi biaya operasional.
 - Siklus operasional dan pengaturan mesin berpotensi memengaruhi kebutuhan pemeliharaan, namun, pengaruhnya mungkin kompleks dan sulit diprediksi.
 - Data sensor yang tersedia dari mesin pesawat, seperti pembacaan suhu, tekanan, dan parameter lainnya, memberikan informasi yang berharga untuk memahami kondisi mesin dan meramalkan pemeliharaan yang diperlukan.
@@ -29,6 +29,7 @@ Lalu bagaimana memprediksi waktu pemeliharaan pesawat berikutnya berdasarkan sik
 
 2. Jawaban Pernyataan Masalah 2: Membangun sistem analisis data yang dapat menggunakan pembacaan sensor dari mesin pesawat untuk meningkatkan visibilitas kondisi pesawat dan merencanakan pemeliharaan yang lebih efisien.
 
+Dengan model ini diharapkan dapat diantisipasi sesuai dengan prediksi yang telah dilakukan.
 
 ## Data Understanding
 - Deskripsi Dataset
@@ -58,7 +59,7 @@ Kumpulan data "kebenaran" yang menyertainya mengaitkan setiap catatan dengan var
 - Labeling
   Threshold Labeling: Membuat label biner ('label') berdasarkan ambang batas 30 untuk RUL, yang membantu dalam menciptakan masalah klasifikasi.
 - Train-Test Split
-  Splitting Data: Menggunakan fungsi pemisahan train-test untuk membagi data menjadi set pelatihan dan pengujian. Model akan dilatih pada set pelatihan dan dievaluasi pada set pengujian.
+  Splitting Data: Menggunakan fungsi pemisahan train-test untuk membagi data menjadi set pelatihan dan pengujian. Dengan persentase train_set 80% dan test_set 20%. Model akan dilatih pada set pelatihan dan dievaluasi pada set pengujian.
 
 ## Modeling
 1. Pemilihan Model
@@ -72,6 +73,9 @@ Kumpulan data "kebenaran" yang menyertainya mengaitkan setiap catatan dengan var
 
 ## Evaluation
 
-F1 score dan accuracy biasanya digunakan untuk evaluasi pada tugas klasifikasi, sedangkan dalam kasus regresi seperti yang Anda jelaskan (untuk memprediksi waktu pemeliharaan pesawat), metrik evaluasi yang lebih umum digunakan adalah Mean Squared Error (MSE), Root Mean Squared Error (RMSE), dan koefisien determinasi (R-squared). Model ini telah berhasil memperoleh akurasi sebesar 94%
+F1 score dan accuracy biasanya digunakan untuk evaluasi pada tugas klasifikasi, sedangkan dalam kasus regresi linear (untuk memprediksi waktu pemeliharaan pesawat), metrik evaluasi yang lebih umum digunakan adalah Mean Squared Error (MSE), Root Mean Squared Error (RMSE), dan koefisien determinasi (R-squared). Model ini telah berhasil memperoleh akurasi sebesar 94%
 
-![image](https://github.com/zeroix07/Aircraft-Maintenance-Prediction/assets/120600614/338c3051-6623-4ce8-b4d5-03b63508f2c9)
+|  | precision | recall | f1-score | support |
+| --- | --- | --- | --- | --- |
+| 0 | 0.95 | 1.00 | 0.97 | 5883 |
+| 1 | 0.91 | 0.48 | 0.63 | 631 |
