@@ -37,6 +37,13 @@ Dengan model ini diharapkan dapat diantisipasi sesuai dengan prediksi yang telah
   [Sumber Dataset : Kaggle](https://www.kaggle.com/datasets/aadharshviswanath/aircraft-sensor-and-engine-performance/data)
 
 - Jumlah Data: 32569 entri
+  
+Contoh Dataset:
+
+| | id | cycle | setting1 | setting2 | setting 3| s1 | s2 | s3 | ... | s21 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 0 | 1 | 1 | -0.0007 | -0.0004	 | 100 | 518.67 | 641.82 | 1589.70 | ... | 23.419000 |
+| 1 | 1 | 2 | 0.0019 | -0.0003	| 100 | 518.67 | 642.15 | 1591.82 | ... | 23.423600 |
 
 ### Variabel-variabel:
 - id: Pengidentifikasi unik untuk setiap entri data.
