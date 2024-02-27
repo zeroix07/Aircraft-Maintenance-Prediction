@@ -6,12 +6,7 @@ Dalam industri penerbangan, pemeliharaan pesawat adalah bagian penting dalam mem
 
 Salah satu pendekatan yang digunakan adalah menggunakan teknik machine learning, seperti regresi linear, untuk memprediksi kebutuhan pemeliharaan pesawat. Dengan menganalisis data historis tentang pemeliharaan, pengoperasian pesawat, dan faktor-faktor lain yang mempengaruhi kondisi pesawat, model regresi linear dapat digunakan untuk memperkirakan waktu pemeliharaan berikutnya, mendeteksi potensi kegagalan komponen, atau bahkan memprediksi sumber daya yang diperlukan untuk pemeliharaan di masa mendatang. Dengan demikian, penggunaan regresi linear dalam proyek pemeliharaan pesawat menjadi salah satu langkah yang menarik dalam upaya untuk meningkatkan efisiensi, keselamatan, dan kinerja operasional dalam industri penerbangan. Hasil penelitian  ini  memberikan  wawasan  berharga  dalam  pemeliharaan  prediktif  mesin  jet  dan menunjukkan manfaat signifikan dari penerapan machine learning dalam meningkatkan efisiensi dan keandalan pesawat.  Strategi pemeliharaan  yang  buruk  dapat  mengakibatkan  produktivitas mesin yang lebih rendah. Kurangnya pemeliharaan pada mesin juga dapat menyebabkan kerugian finansial. Oleh karena itu, diperlukan sebuah strategi pemeliharaan yang baik untuk mencegah terjadinya downtimeyang tidak direncanakan. Predictive  maintenance adalah  metode  yang  menggunakan  alat  prediksi  untuk  menentukan  kapan  pemeliharaan  harus dilakukan.  Teknik  ini  didasari  pada  pemantauan  (monitoring)  berkelanjutan  pada  peralatan  sehingga memungkinkan dilakukannya pemeliharaan jika diperlukan
 
-Latar belakang pemilihan project ini:
-- Pemeliharaan pesawat yang efisien adalah kunci dalam industri penerbangan untuk menjaga keamanan dan mengurangi biaya operasional.
-- Siklus operasional dan pengaturan mesin berpotensi memengaruhi kebutuhan pemeliharaan, namun, pengaruhnya mungkin kompleks dan sulit diprediksi.
-- Data sensor yang tersedia dari mesin pesawat, seperti pembacaan suhu, tekanan, dan parameter lainnya, memberikan informasi yang berharga untuk memahami kondisi mesin dan meramalkan pemeliharaan yang diperlukan.
-
-Lalu bagaimana memprediksi waktu pemeliharaan pesawat berikutnya berdasarkan siklus operasional dan parameter mesin?
+Pemilihan proyek ini juga dipicu oleh kesadaran akan pentingnya pemeliharaan pesawat yang efisien dalam industri penerbangan. Efisiensi dalam pemeliharaan bukan hanya tentang menjaga keamanan penerbangan, tetapi juga tentang mengurangi biaya operasional yang signifikan. Namun, tantangan utama dalam merencanakan pemeliharaan adalah kompleksitas pengaruh siklus operasional dan pengaturan mesin terhadap kebutuhan pemeliharaan. Pengaruh ini seringkali sulit diprediksi dengan akurat karena melibatkan banyak faktor yang saling terkait. Dalam konteks ini, data sensor yang terus-menerus dihasilkan oleh mesin pesawat menjadi sumber informasi yang sangat berharga. Data ini, yang mencakup pembacaan suhu, tekanan, dan parameter lainnya, memberikan wawasan yang mendalam tentang kondisi mesin. Dengan memanfaatkan data sensor ini dan teknik machine learning seperti regresi linear, kami bertujuan untuk mengembangkan model yang dapat meramalkan waktu pemeliharaan pesawat dengan lebih akurat. Dengan demikian, proyek ini bukan hanya tentang meningkatkan efisiensi operasional, tetapi juga tentang meningkatkan keselamatan penerbangan dan mengurangi risiko gangguan yang tidak terduga.
 
 ## Business Understanding
 
@@ -19,7 +14,7 @@ Lalu bagaimana memprediksi waktu pemeliharaan pesawat berikutnya berdasarkan sik
 
 1. **Bagaimana cara untuk memprediksi waktu pemeliharaan berikutnya untuk pesawat berdasarkan siklus operasional dan pengaturan mesin?**
 
-2. **Apakah ada cara untuk meningkatkan efisiensi perencanaan pemeliharaan pesawat dengan memanfaatkan data sensor yang tersedia?**
+2. **Bagaimana cara untuk meningkatkan efisiensi perencanaan pemeliharaan pesawat dengan memanfaatkan data sensor yang tersedia?**
 
 ### Goals
 
